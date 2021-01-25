@@ -1,0 +1,81 @@
+body {
+  padding-top: 3.5rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
+background: linear-gradient(to right, #222122, #222122) !important;
+}
+
+.jumbotron {
+/* background-image:url('author1.jpg'); */
+ padding: 4rem 2rem; 
+ background: linear-gradient(to right, #d5c947,  #2a8278,#5d8c57,#d5c947,#2a8278,#97a94f) !important; 
+
+
+}
+
+.card-body {
+/* -ms-flex: 1 1 auto; */
+/* flex: 1 1 auto; */
+/* padding: 1.25rem; */
+background-color: #c96567;
+color: white;
+}
+
+#author, #postTitle, #postDate {
+background-color: transparent;
+border: none;
+border-bottom: 2px solid rgb(24, 23, 23);
+color: yellow !important;
+}
+
+#postContent {
+background-color: transparent;
+border: 2px solid rgb(24, 23, 65);
+color: yellow !important;
+}
+
+.col-md-4 {
+/*margin: 20px;
+border: 3px solid blue;
+  border-radius: 10px;*/
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+#up{
+  margin-right: 10px;
+}
+
+.space.mt-4 {
+background: linear-gradient(to right, #d5c947,  #2a8278,#5d8c57,#d5c947,#2a8278,#97a94f) !important;
+padding-top: 50px; 
+padding-bottom: 10px; 
+padding-left: 100px;
+padding-right: 100px; 
+color:black !important;
+}
+
+.glow {
+color: black !important;
+}
+
+.footer-copyright {
+text-align: center !important;
+}
+

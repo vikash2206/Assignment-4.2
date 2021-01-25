@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./app.css">
+    <title>Author Blog App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">BlogApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html">Create New Article</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+      <div class="container">
+        <div class="card m-4">
+          <div class="card-body">
+            <h2 class="pt-4">Create New Post</h2>
+            <div class="form-group">
+              <label for="Author">Author</label>
+              <input type="text" class="form-control" placeholder="Author" id="author"/>
+            </div>
+            <div class="form-group">
+              <label for="Post Title">Post Title</label>
+              <input type="text" class="form-control" placeholder="Post Title" id="postTitle"/>
+            </div>
+            <div class="form-group">
+              <label for="Post Content">Post Content</label>
+              <textarea id="postContent" cols="30" rows="10" class="form-control" id="postContent" ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="Date">Date</label>
+              <input type="date" class="form-control" id="postDate" />
+            </div>
+            <input type="submit" value="Save" class="btn btn-primary" id="saveBtn" onclick="upDate()"/>
+            <input type="submit" value="Cancel" class="btn btn-danger" id="cancelBtn" onclick="clearId()"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="space mt-4">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <footer class="page-footer blue text-center text-md-left mt-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="title mb-3">BlogApp</h5>
+                                <p>The Best Author Blogs !!! </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="title mb-3"></h5>
+                                <ul>
+                                    <li><a class="glow" href="./index.html">Home</a></li>
+                                    <li><a class="glow" href="./create.html">Create</a></li>
+                                </ul>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="footer-copyright">
+                        <div class="container-fluid">
+                             Author BlogApp
+                        </div>
+                      </div>
+                </footer>
+            </div>
+        </div>
+      </div> 
+
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="update.js"></script>
+</body>
+</html>
